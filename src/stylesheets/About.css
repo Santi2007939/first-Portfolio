@@ -1,0 +1,6 @@
+.About__title {
+    background: #ccc;
+    background: radial-gradient(#f5f3e6, #a9afbc);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}

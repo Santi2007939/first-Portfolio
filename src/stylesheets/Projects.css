@@ -1,0 +1,111 @@
+#Projects__title {
+    background: #ccc;
+    background: radial-gradient(#f5f3e6, #a9afbc);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.project img {
+    z-index: 14;
+}
+
+.project:hover img {
+    z-index: 10;
+    opacity: 0.05;
+}
+
+.project__text {
+    z-index: 1;
+}
+
+.project:hover .project__text {
+    z-index: 15;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+#container button {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    background: transparent;
+    padding: 0;
+    font-size: 1rem;
+    width: 12rem;
+    height: auto;
+}
+
+.circle, .icon, .arrow, .button-text {
+    transition: all 0.45s cubic-bezier(0.65,0,.076, 1);
+}
+
+.circle {
+    position: relative;
+    display: block;
+    margin: 0;
+    width: 3rem;
+    height: 3rem;
+    background: #ebecef;
+    border-radius: 1.625rem;
+}
+
+.icon {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: #1d1b0c
+}
+
+.arrow {
+    left: 0.625rem;
+    width: 1.125rem;
+    height: 0.125rem;
+    background: none;
+}
+
+.arrow::before {
+    position: absolute;
+    content: '';
+    top: -0.25rem;
+    right: 0.0625rem;
+    width: 0.625rem;
+    height: 0.625rem;
+    border-top: 0.125rem solid #1d1b0c;
+    border-right: 0.125rem solid #1d1b0c;
+    transform: rotate(45deg);
+}
+
+.button-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0.75rem 0;
+    margin: 0 0 0 1.85rem;
+    color: #ebecef;
+    font-weight: 700;
+    line-height: 1.6;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#container button:hover .circle {
+    width: 100%;
+}
+
+#container button:hover .icon .arrow {
+    background: #1d1b0c;
+    transform: translate(1rem, 0);
+}
+
+#container button:hover .button-text {
+    color: #1d1b0c;
+}

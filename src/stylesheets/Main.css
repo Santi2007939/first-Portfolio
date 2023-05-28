@@ -1,0 +1,26 @@
+.title {
+    white-space: nowrap;
+    border-right: 3px solid;
+    width: 30ch;
+    animation: typing 3s steps(30), blink .5s infinite step-end alternate;
+    overflow:hidden;
+    background: #ccc;
+    background: radial-gradient(#f5f3e6, #ebecef);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+@keyFrames typing {
+    from { width: 0}
+}
+    
+@keyFrames blink {
+    50% { border-color: transparent}
+}
+
+.general {
+    background: #ccc;
+    background: radial-gradient(#f5f3e6, #000);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
