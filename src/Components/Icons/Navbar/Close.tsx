@@ -1,4 +1,4 @@
-export function Close(props: SVGProps<SVGSVGElement>) {
+export function Close(props:any) {
     return (
         <>
         <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 24 24" className='mt-4 absolute right-8 hover:cursor-pointer hover:text-pbutton'
